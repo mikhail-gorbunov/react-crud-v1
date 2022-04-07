@@ -39,7 +39,7 @@ public class Student {
 
     public Student(String name, String email, Gender gender) {
         this.name = name;
-        this.email = email;
+        this.setEmail(email);
         this.gender = gender;
     }
 }

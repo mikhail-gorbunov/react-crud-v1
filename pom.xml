@@ -23,7 +23,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -164,9 +168,6 @@
 								<id>push-custom-tag</id>
 								<phase>package</phase>
 								<configuration>
-									<to>
-										<image>amigoscode/${app.image.name}:${app.image.tag}</image>
-									</to>
 								</configuration>
 								<goals>
 									<goal>dockerBuild</goal>
